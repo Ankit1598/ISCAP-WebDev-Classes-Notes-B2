@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body {
+	background: black;
+}
+
+/* Navbar */
+.navbar-wrapper {
+	padding: 0 2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	height: 100px;
+}
+
+.navbar-wrapper .navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.navbar-wrapper .navbar .logo {
+	height: 100%;
+}
+
+.navbar-wrapper .navbar .btn {
+	background: #e50914;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+#banner {
+	background: url(./images/banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	z-index: -1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#banner:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+	background: linear-gradient(to bottom, #000, transparent);
+}
+
+#banner:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+	background: linear-gradient(to top, #000, transparent);
+}
+
+.info {
+	width: 50%;
+	color: #fff;
+	text-align: center;
+	z-index: 2;
+}
+
+.info h1 {
+	font-size: 4rem;
+}
+
+.info h4 {
+	font-size: 1.75rem;
+	margin-top: 15px;
+}
+
+.info p {
+	font-size: 1.5rem;
+	margin-top: 30px;
+}
+
+.search {
+	margin-top: 15px;
+	z-index: 2;
+}
+
+.search .input {
+	font-size: 24px;
+	padding: 20px 10px;
+	width: 500px;
+	outline: none;
+	margin-right: -5px;
+}
+
+.search button {
+	background: #e50914;
+	font-size: 24px;
+	padding: 22px 10px;
+	width: 300px;
+	border: none;
+	outline: none;
+}
+
+#one {
+	width: 100%;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 100px;
+	border-top: 7.5px solid #222222;
+}
+
+.wrapper h1 {
+	font-size: 3rem;
+}
+
+.wrapper h4 {
+	font-size: 1.5rem;
+}
+
+.wrapper .textWrapper,
+.wrapper .imgWrapper {
+	width: 50%;
+}
+
+.wrapper .textWrapper {
+	padding: 2rem;
+}
+
+/* Footer */
+.footerWrapper {
+	padding: 50px 150px;
+	border-top: 7.5px solid #222222;
+}
+
+.contact,
+.credit {
+	color: #999999;
+}
+
+.links {
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links ul {
+	list-style: none;
+}
+
+.links ul li {
+	margin: 1rem 0;
+}
+
+.links a {
+	text-decoration: none;
+	color: #999999;
+}
